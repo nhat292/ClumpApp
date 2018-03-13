@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:padding="@dimen/item_margin">
+
+    <com.ck.clump.ui.widget.RoundRectCornerImageView
+        android:id="@+id/fileThumb"
+        android:layout_width="@dimen/size_avatar"
+        android:layout_height="@dimen/size_avatar"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_image_default" />
+
+    <ImageView
+        android:id="@+id/imageChecked"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/badge_check"
+        android:visibility="visible" />
+
+</RelativeLayout>

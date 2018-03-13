@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:ignore="MergeRootFrame">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:theme="@style/PrimaryActivity.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/item_margin">
+
+                <ImageView
+                    android:id="@+id/imvLeft"
+                    style="@style/ImageButtonIcon"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/toolbar_close_white" />
+
+                <TextView
+                    android:id="@+id/tvHeader"
+                    style="@style/TextViewHeaderWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/event_detail" />
+
+                <TextView
+                    android:id="@+id/imvRight"
+                    style="@style/TextViewMenu"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/create" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarLayout"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/contentSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/item_margin">
+
+            <EditText
+                android:id="@+id/edtEventName"
+                style="@style/EditTextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/item_margin"
+                android:gravity="center_horizontal"
+                android:hint="@string/hint_event_name"
+                android:imeOptions="actionDone"
+                android:inputType="textNoSuggestions"
+                android:textCursorDrawable="@drawable/green_cursor"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/contentSetDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtEventName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/item_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSetDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_border_gray"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/item_margin"
+                    android:text="@string/set_a_date"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/tvSetTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/item_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_border_gray"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/item_margin"
+                    android:text="@string/set_a_time"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_medium" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvOptionDetails"
+                style="@style/TextViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contentSetDateTime"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/fab_margin_large"
+                android:text="@string/option_details"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/btnAdditionalInfo"
+                style="@style/ButtonItemBorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvOptionDetails"
+                android:layout_marginTop="@dimen/item_margin"
+                android:background="@drawable/bg_border_gray"
+                android:drawableLeft="@drawable/details_grey"
+                android:drawablePadding="@dimen/item_margin_small"
+                android:drawableRight="@drawable/next"
+                android:drawableTint="@color/colorGray"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/provide_additional_info"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/btnPinLocation"
+                style="@style/ButtonItemBorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnAdditionalInfo"
+                android:layout_marginTop="@dimen/item_margin_small"
+                android:background="@drawable/bg_border_gray"
+                android:drawableLeft="@drawable/pin"
+                android:drawablePadding="@dimen/item_margin_small"
+                android:drawableRight="@drawable/next"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="@string/pin_location"
+                android:textColor="@android:color/black" />
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@+id/btnPinLocation"
+                android:layout_marginTop="@dimen/item_margin_large" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout"
+        android:visibility="gone">
+
+        <include layout="@layout/notification_layout" />
+    </LinearLayout>
+
+</RelativeLayout>

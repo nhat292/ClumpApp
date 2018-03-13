@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_click"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/contentItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/item_margin_small"
+        android:paddingLeft="@dimen/item_margin"
+        android:paddingRight="@dimen/item_margin"
+        android:paddingTop="@dimen/item_margin_small">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="@dimen/size_avatar"
+            android:layout_height="@dimen/size_avatar"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_profile_user" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/typeImage"
+            android:layout_width="@dimen/size_icon_info"
+            android:layout_height="@dimen/size_icon_info"
+            android:layout_alignBottom="@+id/profileImage"
+            android:layout_alignRight="@+id/profileImage"
+            android:src="@drawable/chat_group_icon"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/contentDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_marginRight="@dimen/item_margin"
+            android:layout_toRightOf="@+id/profileImage">
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/TextViewNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="N/A" />
+
+            <TextView
+                android:id="@+id/tvDesc1"
+                style="@style/TextViewNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvName"
+                android:text="N/A"
+                android:textSize="@dimen/text_size_micro" />
+
+            <TextView
+                android:id="@+id/tvDesc2"
+                style="@style/TextViewNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDesc1"
+                android:text="N/A"
+                android:textColor="@color/textColorNormalSecondary"
+                android:textSize="@dimen/text_size_micro" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                style="@style/TextViewNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="N/A"
+                android:textSize="@dimen/text_size_micro" />
+
+            <com.ck.clump.ui.widget.CircularTextView
+                android:id="@+id/tvAmount"
+                style="@style/TextViewNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvDate"
+                android:background="@drawable/bg_text_red_circle"
+                android:gravity="center"
+                android:maxHeight="35dp"
+                android:maxWidth="40dp"
+                android:padding="@dimen/item_margin_small"
+                android:text="1"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_micro"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/contentItem"
+        android:layout_marginLeft="80dp"
+        android:alpha="0.7"
+        android:background="@color/colorPrimaryDark" />
+
+</RelativeLayout>

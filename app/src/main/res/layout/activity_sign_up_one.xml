@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:ignore="MergeRootFrame">
+
+    <ScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Header-->
+            <RelativeLayout
+                android:id="@+id/asuoHeaderContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/fab_margin">
+
+                <ImageView
+                    android:id="@+id/asuoImvHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="20pt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:src="@drawable/clump" />
+
+                <TextView
+                    android:id="@+id/tvTutorial"
+                    style="@style/TextViewTitleWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/asuoImvHeader"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:gravity="center"
+                    android:text="@string/asuo_header_title" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/asuoBtnCountry"
+                style="@style/ButtonSecondaryPopup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/asuoHeaderContent"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin_large"
+                android:drawableRight="@drawable/next"
+                android:gravity="left|center_vertical"
+                android:text="SINGAPORE" />
+
+            <RelativeLayout
+                android:id="@+id/asuoContentCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/asuoBtnCountry"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin">
+
+                <TextView
+                    android:id="@+id/asuoTvCountry"
+                    style="@style/TextViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="+65" />
+
+                <EditText
+                    android:id="@+id/edtPhone"
+                    style="@style/EditTextTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/asuoTvCountry"
+                    android:hint="@string/asuo_hint_phone"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:paddingRight="@dimen/fab_margin" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/asuoBtnDone"
+                style="@style/ButtonSecondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/asuoContentCountry"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:text="@string/done" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

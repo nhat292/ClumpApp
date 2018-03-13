@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "774452282186",
+    "firebase_url": "https://clump-chat.firebaseio.com",
+    "project_id": "clump-chat",
+    "storage_bucket": "clump-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774452282186:android:db7952947c6299e5",
+        "android_client_info": {
+          "package_name": "chat.clump"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774452282186-0k0hmm7rr585n248p3kdn3n5jegghm7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC974LIHT3vpPfzOdr8dkCS2jSi4kGOkOg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

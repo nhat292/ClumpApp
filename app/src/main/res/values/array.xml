@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country_codes">
+        <item>ALBANIA;;;+355</item>
+        <item>ALGERIA;;;+213</item>
+        <item>AMERICAN SAMOA;;;+684</item>
+        <item>ANDORRA;;;+376</item>
+        <item>ANGOLA;;;+244</item>
+        <item>ANGUILLA;;;+1264</item>
+        <item>ANTARCTICA;;;+672</item>
+        <item>ANTIGUA &amp; BARBUDA;;;+1268</item>
+        <item>ARGENTINA;;;+54</item>
+        <item>ARMENIA;;;+374</item>
+        <item>ARUBA;;;+297</item>
+        <item>ASCENSION;;;+247</item>
+        <item>AUSTRALIA;;;+61</item>
+        <item>AUSTRIA;;;+43</item>
+        <item>AZERBAIJAN;;;+994</item>
+        <item>ANITED ARAB EMIRATES;;;+971</item>
+        <item>BAHAMAS;;;+1242</item>
+        <item>BANGLADESH;;;+880</item>
+        <item>BARBADOS;;;+1246</item>
+        <item>BELARUS;;;+375</item>
+        <item>BELGIUM;;;+32</item>
+        <item>BELIZE;;;+501</item>
+        <item>BENIN;;;+229</item>
+        <item>BERMUDA;;;+1441</item>
+        <item>BHUTAN;;;+975</item>
+        <item>BOLIVIA;;;+591</item>
+        <item>BOSNIA &amp; HERZEGOVINA;;;+387</item>
+        <item>BOTSWANA;;;+267</item>
+        <item>BRAZIL;;;+55</item>
+        <item>BRITISH VIRGIN ISLANDS;;;+1809</item>
+        <item>BRUNEI;;;+673</item>
+        <item>BULGARIA;;;+359</item>
+        <item>BURKINA FASO;;;+226</item>
+        <item>BURUNDI;;;+257</item>
+        <item>CAMBODIA;;;+855</item>
+        <item>CAMEROON;;;+237</item>
+        <item>CANADA;;;+1</item>
+        <item>CAPE VERDE ISLANDS;;;+238</item>
+        <item>CAYMAN ISLANDS;;;+1345</item>
+        <item>CENTRAL AFRICAN REBUBLIC;;;+236</item>
+        <item>CHAD;;;+235</item>
+        <item>CHATHAM ISLANDS (NEW ZEALAND);;;+64</item>
+        <item>CHILE;;;+56</item>
+        <item>CHINA;;;+86</item>
+        <item>CHRISTMAS ISLAND;;;+672</item>
+        <item>COCOS ISLAND;;;+672</item>
+        <item>COLOMBIA;;;+57</item>
+        <item>COMOROS;;;+269</item>
+        <item>CONGO;;;+242</item>
+        <item>COOK ISLANDS;;;+682</item>
+        <item>COSTA RICA;;;+506</item>
+        <item>CRAOTIA;;;+38</item>
+        <item>CUBA;;;+53</item>
+        <item>CYPRUS;;;+357</item>
+        <item>CZECH;;;+420</item>
+        <item>DENMARK;;;+45</item>
+        <item>DIEGO GARCIA;;;+246</item>
+        <item>DJIBOUTI;;;+253</item>
+        <item>DOMINICA ISLAND;;;+1809</item>
+        <item>DOMINICAN REPUBLIC;;;+1809</item>
+        <item>DONGTIMOR;;;+670</item>
+        <item>EASTER ISLAND;;;+56</item>
+        <item>ECUADOR;;;+593</item>
+        <item>EGYPT;;;+20</item>
+        <item>EL SALVADORE;;;+503</item>
+        <item>EQUATORIAL;;;+240</item>
+        <item>GUINEA ERITREA;;;+291</item>
+        <item>ESTONIA;;;+372</item>
+        <item>ETHIOPIA;;;+251</item>
+        <item>FAEROE ISLANDS;;;+298</item>
+        <item>FALKAND ISLANDS;;;+500</item>
+        <item>FIJI;;;+679</item>
+        <item>FINLAND;;;+358</item>
+        <item>FRANCE;;;+33</item>
+        <item>FRANCH ANTILLIES;;;+596</item>
+        <item>FRENCH GUIANA;;;+594</item>
+        <item>FRENCH POLYNESIA;;;+689</item>
+        <item>FYROM (MACEDONIA);;;+389</item>
+        <item>GABON;;;+241</item>
+        <item>GAMBIA;;;+220</item>
+        <item>GEORGIA;;;+995</item>
+        <item>GERMANY;;;+49</item>
+        <item>GHANA;;;+233</item>
+        <item>GIBRALTAR;;;+350</item>
+        <item>GREECE;;;+30</item>
+        <item>GREENLAND;;;+299</item>
+        <item>GRENADA;;;+1473</item>
+        <item>GUADELOUPE;;;+590</item>
+        <item>GUAM;;;+671</item>
+        <item>GUANTANAMO BAY;;;+53</item>
+        <item>GUANTEMALA;;;+502</item>
+        <item>GUINEA;;;+224</item>
+        <item>GUINE BISSAU;;;+245</item>
+        <item>GUYANA;;;+592</item>
+        <item>HAITI;;;+509</item>
+        <item>HONDURAS;;;+504</item>
+        <item>HONG KONG;;;+852</item>
+        <item>HUNGARY;;;+36</item>
+        <item>ICELAND;;;+354</item>
+        <item>INDIA;;;+91</item>
+        <item>INDONESIA;;;+62</item>
+        <item>IRAN;;;+98</item>
+        <item>IRAQ;;;+964</item>
+        <item>IRELAND;;;+353</item>
+        <item>ISRAEL;;;+972</item>
+        <item>ITALLY;;;+39</item>
+        <item>IVORY COAST;;;+225</item>
+        <item>JAMAICA;;;+1809</item>
+        <item>JAPAN;;;+81</item>
+        <item>JORDAN;;;+962</item>
+        <item>KAZAKHSTAN;;;+7</item>
+        <item>KENYA;;;+254</item>
+        <item>KIRIBATI;;;+686</item>
+        <item>KOREA, SOUTH;;;+82</item>
+        <item>KUWAIT;;;+965</item>
+        <item>KYRGYSTAN;;;+7</item>
+        <item>LAOS;;;+856</item>
+        <item>LATVIA;;;+371</item>
+        <item>LEBANON;;;+961</item>
+        <item>LESOTHO;;;+266</item>
+        <item>LIBERIA;;;+231</item>
+        <item>LIBYA;;;+218</item>
+        <item>LIECHTENSTIEN;;;+423</item>
+        <item>LITHUANIA;;;+370</item>
+        <item>LUXEMBURGE;;;+352</item>
+        <item>MACAO;;;+853</item>
+        <item>MACEDONIA, FEDERAL REP PO;;;+389</item>
+        <item>MADAGASCAR;;;+261</item>
+        <item>MALAWI;;;+265</item>
+        <item>MALAYSIA;;;+60</item>
+        <item>MALDIVES;;;+960</item>
+        <item>MALI;;;+223</item>
+        <item>MALTA;;;+356</item>
+        <item>MARSHALL ISLANDS;;;+692</item>
+        <item>MARTINIQUE;;;+596</item>
+        <item>MAURITANIA;;;+222</item>
+        <item>MAURITIUS;;;+230</item>
+        <item>MAYOTTE;;;+269</item>
+        <item>MEXICO;;;+52</item>
+        <item>MICRONESIA;;;+691</item>
+        <item>MIDWAY ISLANDS;;;+1209</item>
+        <item>MIQUELON;;;+508</item>
+        <item>MOLDOVA;;;+373</item>
+        <item>MONACO;;;+377</item>
+        <item>MONGOLIA;;;+976</item>
+        <item>MONSERRAT;;;+1664</item>
+        <item>MOROCCO;;;+212</item>
+        <item>MOZAMBIQUE;;;+258</item>
+        <item>MYANMAR;;;+95</item>
+        <item>NAMBIA;;;+264</item>
+        <item>NAURU;;;+674</item>
+        <item>NEPAL;;;+977</item>
+        <item>NETHERLANDS;;;+31</item>
+        <item>NETHERLANDS ANTILLES;;;+599</item>
+        <item>NEVIS;;;+1869</item>
+        <item>NEW CALCEDONIA;;;+687</item>
+        <item>NEW ZEALAND;;;+64</item>
+        <item>NICARAGUA;;;+505</item>
+        <item>NIGER;;;+227</item>
+        <item>NIGERIA;;;+234</item>
+        <item>NIUE;;;+683</item>
+        <item>NORFOLK ISLAND;;;+672</item>
+        <item>NORTH KOREA;;;+850</item>
+        <item>NORWAY;;;+47</item>
+        <item>OMAN;;;+968</item>
+        <item>PAKISTAN;;;+92</item>
+        <item>PALAU;;;+680</item>
+        <item>PANAMA;;;+507</item>
+        <item>PAPUA NEW GUINEA;;;+675</item>
+        <item>PARAGUAY;;;+595</item>
+        <item>PERU;;;+51</item>
+        <item>PHILIPPIN;;;+63</item>
+        <item>POLAND;;;+48</item>
+        <item>PORTUGAL;;;+351</item>
+        <item>QATAR;;;+974</item>
+        <item>REUNION ISLAND;;;+262</item>
+        <item>ROMANIA;;;+40</item>
+        <item>RUSSIA;;;+7</item>
+        <item>RWANDA;;;+250</item>
+        <item>ST. HELENA;;;+290</item>
+        <item>ST. KITTS;;;+1869</item>
+        <item>ST. LUCIA;;;+1758</item>
+        <item>ST. PIERRE;;;+1508</item>
+        <item>ST. VINCENT;;;+1784</item>
+        <item>SAIPAN;;;+670</item>
+        <item>SAN MARINO;;;+378</item>
+        <item>SAO TONE;;;+378</item>
+        <item>SAUDI ARABIA;;;+966</item>
+        <item>SENEGAL REPUBLIC;;;+221</item>
+        <item>SERBIA, REPUBLIC OF;;;+381</item>
+        <item>SEYCHELLES;;;+248</item>
+        <item>SIERRA LEONE;;;+232</item>
+        <item>SINGAPORE;;;+65</item>
+        <item>SLOVAKIA;;;+421</item>
+        <item>SLOVENIA;;;+386</item>
+        <item>SOLOMON ISLANDS;;;+677</item>
+        <item>SOUTH AFRICA;;;+27</item>
+        <item>SOMALIA;;;+252</item>
+        <item>SPAIN;;;+34</item>
+        <item>SRI LANKA;;;+94</item>
+        <item>SUDAN;;;+249</item>
+        <item>SURINAM;;;+597</item>
+        <item>SWAZILAND;;;+268</item>
+        <item>SWEDAN;;;+46</item>
+        <item>SWITZERLAND;;;+41</item>
+        <item>SYRIA;;;+963</item>
+        <item>TAIWAN;;;+886</item>
+        <item>TAJIKISTAN;;;+7</item>
+        <item>TANZANIA;;;+255</item>
+        <item>THAILAND;;;+66</item>
+        <item>TOGO;;;+228</item>
+        <item>TONGA;;;+676</item>
+        <item>TRINIDAD &amp; TOBAGO;;;+1809</item>
+        <item>TUNISIA;;;+216</item>
+        <item>TURKEY;;;+90</item>
+        <item>TUKMENISTAN;;;+7</item>
+        <item>TURKS &amp; CAICOS;;;+946</item>
+        <item>TUVALU;;;+688</item>
+        <item>UGANDA;;;+256</item>
+        <item>UKRAINA;;;+380</item>
+        <item>UNITED KINGDOM;;;+44</item>
+        <item>URUGUAY;;;+598</item>
+        <item>USA;;;+1</item>
+        <item>UZBEKISTAN;;;+7</item>
+        <item>VANUATU;;;+678</item>
+        <item>VATICAN CITY;;;+39</item>
+        <item>VENEZUELA;;;+58</item>
+        <item>VIETNAM;;;+84</item>
+        <item>WAKE ISLAND;;;+1808</item>
+        <item>WALLIS &amp; FUTUNA;;;+681</item>
+        <item>WESTERN SOMOA;;;+685</item>
+        <item>YEMEN;;;+967</item>
+        <item>YUGOSLAVIA;;;+381</item>
+        <item>ZAIRE;;;+243</item>
+        <item>ZAMBIA;;;+260</item>
+        <item>ZIMBABWE;;;+263</item>
+    </string-array>
+
+    <string-array name="default_preview">
+        <item>#df5a55</item>
+        <item>#f9bb72</item>
+        <item>#76afcf</item>
+        <item>#dd6495</item>
+        <item>#72d3b4</item>
+    </string-array>
+
+</resources>

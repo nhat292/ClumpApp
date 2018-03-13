@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_click"
+    android:focusable="true"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/contentItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/item_margin_small"
+        android:paddingLeft="@dimen/item_margin"
+        android:paddingRight="@dimen/item_margin"
+        android:paddingTop="@dimen/item_margin_small">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="@dimen/size_avatar"
+            android:layout_height="@dimen/size_avatar"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_profile_user" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/typeImage"
+            android:layout_width="@dimen/size_icon_info"
+            android:layout_height="@dimen/size_icon_info"
+            android:layout_alignBottom="@+id/profileImage"
+            android:layout_alignRight="@+id/profileImage"
+            android:src="@drawable/chat_group_icon"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/TextViewNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_marginRight="@dimen/item_margin"
+            android:layout_toLeftOf="@+id/imvInfo"
+            android:layout_toRightOf="@+id/profileImage"
+            android:text="N/A" />
+
+        <ImageView
+            android:id="@+id/imvInfo"
+            android:layout_width="@dimen/size_icon_info"
+            android:layout_height="@dimen/size_icon_info"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/badge_info" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/contentItem"
+        android:layout_marginLeft="80dp"
+        android:alpha="0.7"
+        android:background="@color/colorPrimaryDark" />
+
+</RelativeLayout>

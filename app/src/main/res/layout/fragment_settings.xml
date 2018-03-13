@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColorGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAccount"
+            style="@style/TextViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_margin"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_marginRight="@dimen/item_margin"
+            android:layout_marginTop="@dimen/fab_margin_large"
+            android:text="@string/account"
+            android:textColor="@color/textHeaderSecondary"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bgColorLine" />
+
+        <Button
+            android:id="@+id/btnEditProfile"
+            style="@style/ButtonItemBorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/next"
+            android:gravity="left|center_vertical"
+            android:text="@string/edit_profile"
+            android:textSize="@dimen/text_size_medium"
+            android:typeface="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bgColorLine" />
+
+        <TextView
+            android:id="@+id/tvGeneral"
+            style="@style/TextViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_margin"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_marginRight="@dimen/item_margin"
+            android:layout_marginTop="@dimen/fab_margin_large"
+            android:text="@string/general"
+            android:textColor="@color/textHeaderSecondary"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bgColorLine" />
+
+        <Button
+            android:id="@+id/btnNotifications"
+            style="@style/ButtonItemBorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:drawableRight="@drawable/next"
+            android:gravity="left|center_vertical"
+            android:text="@string/notifications"
+            android:textSize="@dimen/text_size_medium"
+            android:typeface="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bgColorLine" />
+
+        <Button
+            android:id="@+id/btnChatSettings"
+            style="@style/ButtonItemBorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:drawableRight="@drawable/next"
+            android:gravity="left|center_vertical"
+            android:text="@string/chat_setting"
+            android:textSize="@dimen/text_size_medium"
+            android:typeface="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bgColorLine" />
+
+        <Button
+            android:id="@+id/btnBlocking"
+            style="@style/ButtonItemBorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:drawableRight="@drawable/next"
+            android:gravity="left|center_vertical"
+            android:text="@string/blocking"
+            android:textSize="@dimen/text_size_medium"
+            android:typeface="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bgColorLine" />
+
+        <TextView
+            android:id="@+id/tvMore"
+            style="@style/TextViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_margin"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_marginRight="@dimen/item_margin"
+            android:layout_marginTop="@dimen/fab_margin_large"
+            android:text="@string/more"
+            android:textColor="@color/textHeaderSecondary"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bgColorLine" />
+
+        <Button
+            android:id="@+id/btnAbout"
+            style="@style/ButtonItemBorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/next"
+            android:gravity="left|center_vertical"
+            android:text="@string/about"
+            android:textSize="@dimen/text_size_medium"
+            android:typeface="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bgColorLine" />
+
+        <Button
+            android:id="@+id/btnTermConditions"
+            style="@style/ButtonItemBorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/next"
+            android:gravity="left|center_vertical"
+            android:text="@string/term_conditions"
+            android:textSize="@dimen/text_size_medium"
+            android:typeface="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bgColorLine" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            style="@style/ButtonItemBorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/next"
+            android:gravity="left|center_vertical"
+            android:text="@string/logout"
+            android:textSize="@dimen/text_size_medium"
+            android:typeface="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bgColorLine" />
+    </LinearLayout>
+
+
+</ScrollView>

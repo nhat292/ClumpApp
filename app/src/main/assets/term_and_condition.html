@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+    @font-face {
+        font-family: pt-sans-regula;
+        src: url("file:///android_asset/fonts/ptSansRegular.ttf")
+    }
+    @font-face {
+        font-family: pt-sans-bold;
+        src: url("file:///android_asset/fonts/ptSansBold.ttf")
+    }
+    body {
+        font-family: pt-sans-regula;
+        color: black;
+    }
+	ol {
+	  list-style-type: none;
+	  counter-reset: item;
+	  margin: 0;
+	  padding: 0;
+	}
+
+	ol > li {
+	  display: table;
+	  counter-increment: item;
+	  margin-bottom: 1.2em;
+	}
+
+	ol > li:before {
+	  content: counters(item, ".") ". ";
+	  display: table-cell;
+	  padding-right: 0.6em;
+	  margin-bottom: 1.2em;
+	}
+
+	li ol > li {
+	  margin-bottom: 1.2em;
+	}
+
+	li ol > li:before {
+	  content: counters(item, ".") " ";
+	}
+
+	.header {
+		margin-bottom: 1.2em;
+	}
+
+	.header-bold {
+		margin-bottom: 1.2em;
+        font-family: pt-sans-bold;
+	}
+
+	.text-bold {
+		margin-bottom: 0.3em;
+        font-family: pt-sans-bold;
+	}
+
+	img.centre {
+      width: 150px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1em;
+    }
+
+    div.centre {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .invert { filter: #27d2b3; }
+
+    </style>
+</head>
+<body>
+<br/>
+<img class="centre invert" src="clump.png">
+<hr size="1">
+<div class="text-bold">Important</div>
+<div>By using this application, you agree to our Term &amp; Condition below. Please read them
+    carefully.
+</div>
+<br/><br/>
+<div class="centre header-bold">CLUMP’S TERMS OF USE</div>
+<ol>
+    <li>
+        <div class="header">TERMS OF USE</div>
+        <ol>
+            <li>
+                Cauldron & Ko Pte Ltd's Mobile Application, CLUMP, ("our", "we", "us" or "the Mobile
+                Application") provides messaging, event planning and calendaring functions ("the
+                Services") to users around the world.
+            </li>
+            <li>
+                By downloading, browsing, accessing or using the CLUMP Mobile Application and
+                Services, you agree to be bound by these Terms and Conditions of Use. We reserve the
+                right to amend these terms and conditions at any time. If you disagree with any of
+                these Terms and Conditions of Use, you must immediately discontinue your access to
+                the Mobile Application and your use of the Services offered on the Mobile
+                Application. Continued use of the Mobile Application will constitute acceptance of
+                these Terms and Conditions of Use, as may be amended from time to time.
+            </li>
+        </ol>
+    </li>
+    <li>
+        <div class="header">DEFINITIONS</div>
+        <ol>
+            <li>
+                In these Terms and Conditions of Use, the following capitalised terms shall have the
+                following meanings, except where the context otherwise requires:
+                <ol>
+                    <li>
+                        "Account" means an account created by a User on the Mobile Application as
+                        part of Registration.
+                    </li>
+                    <li>
+                        "Privacy Policy" means the privacy policy set out in Clause 14 of these
+                        Terms and Conditions of Use.
+                    </li>
+                    <li>
+                        "Register" means to create an Account on the Mobile Application and
+                        "Registration" means the act of creating such an Account.
+                    </li>
+                    <li>
+                        "Users" means users of the Mobile Application, including you, and "User"
+                        means any one of them.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+    <li>
+        <div class="header">GENERAL ISSUES ABOUT THE MOBILE APPLICATION AND THE SERVICES</div>
+        <ol>
+            <li>
+                Applicability of terms and conditions: The use of the Mobile Application are subject
+                to these Terms and Conditions of Use.
+            </li>
+            <li>
+                Scope: The Mobile Application and Services are for your non-commercial, personal use
+                only and must not be used for commercial purposes and/or profit.
+            </li>
+            <li>
+                Registration: You must register for the Mobile Application using accurate data,
+                inter alia, your phone number. You agree to receive text messages or phone calls
+                from us with codes inter alia, to register for the Mobile Application or for
+                reminders on updates.
+            </li>
+            <li>
+                Access: By using the Mobile Application, you agree that you provide access to your
+                mobile phone address book for the names and phone numbers of your contacts on a
+                regular basis for the purpose of us providing our Services, and your mobile phone
+                calendar so that we can provide our Services. You confirm you are authorized to
+                provide us such access to allow us to provide our Services. We confirm that we do
+                not save, store or copy your mobile phone address book, or name and phone numbers of
+                the contacts therein.
+            </li>
+            <li>
+                Equipment and Networks: The provision of the Mobile Application does not include the
+                provision of a mobile telephone or handheld device or other necessary equipment to
+                access the Mobile Application. To use the Mobile Application or Services, you will
+                require Internet connectivity and appropriate telecommunication links. You
+                acknowledge that the terms of agreement with your respective mobile network provider
+                ("Mobile Provider") will continue to apply when using the Mobile Application. As a
+                result, you may be charged by the Mobile Provider for access to network connection
+                services for the duration of the connection while accessing the Mobile Application
+                or any such third party charges as may arise. You accept responsibility for any such
+                charges that arise and agree to indemnify us from the aforementioned.
+            </li>
+            <li>
+                Permission to use Mobile Application: If you are not the bill payer for the mobile
+                telephone or handheld device being used to access the Mobile Application, you will
+                be assumed to have received permission from the bill payer for using the Mobile
+                Application.
+            </li>
+            <li>
+                License to Use Material: By submitting any text or images (including photographs)
+                (“Material”) via the Application, you represent that you are the owner of the
+                Material, or have proper authorization from the owner of the Material to use,
+                reproduce and distribute it.
+            </li>
+        </ol>
+    </li>
+    <li>
+        <div class="header">LOCATION INFORMATION</div>
+        <ol>
+            <li>
+                By turning on the location services on your mobile telephone or handheld device, you
+                agree to provide your location to the Mobile Application for us to provide the
+                Services.
+            </li>
+        </ol>
+    </li>
+    <li>
+        <div class="header">YOUR OBLIGATIONS</div>
+        <ol>
+            <li>
+                Accurate information: You warrant that all information provided on Registration and
+                contained as part of your Account is true, complete and accurate and that you will
+                promptly inform us of any changes to such information by updating the information in
+                your Account in the Mobile Application settings.
+            </li>
+            <li>
+                Prohibitions in relation to usage of the Mobile Application: We reserve the right to
+                prevent you using the Mobile Application at our sole discretion. By using the Mobile
+                Application, you undertake that you will not use the Mobile Application or permit
+                anyone else to use the Mobile Application on your mobile phone or device to, inter
+                alia:
+                <ol>
+                    <li>
+                        Send or receive any materials that violate, misappropriate or infringe the
+                        rights of our users or other, including but not limited to privacy, or
+                        intellectual property or any other laws, whether in Singapore or otherwise;
+                    </li>
+                    <li>
+                        Send or receive any materials that are illegal, threatening, grossly
+                        offensive, of an indecent, obscene, intimidating or menacing character,
+                        blasphemous or defamatory of any person, intimidating, harassing, bullying,
+                        hateful, racially or ethnically offensive, in contempt of court or in breach
+                        of confidence, copyright, rights of personality, publicity or privacy or any
+                        other third party rights;
+                    </li>
+                    <li>
+                        Commit or attempt to commit any crimes, whether under Singapore law or any
+                        other country’s laws;
+                    </li>
+                    <li>
+                        Send or receive any material for which you have not obtained all necessary
+                        licences and/or approvals (from us or third parties); or which constitutes
+                        or encourages conduct that would be considered a criminal offence, give rise
+                        to civil liability, or otherwise be contrary to the law of or infringe the
+                        rights of any third party in any country in the world;
+                    </li>
+                    <li>
+                        Do any act or omission which is calculated to incite hatred against any
+                        ethnic, religious or any other minority or is otherwise calculated to
+                        adversely affect any individual, group or entity;
+                    </li>
+                    <li>
+                        Impersonate another person or user;
+                    </li>
+                    <li>
+                        Bulk message users who have not consented to the same, automessaging or
+                        spamming;
+                    </li>
+                    <li>
+                        Collect information of other users in any impermissible or unauthorized
+                        manner;
+                    </li>
+                    <li>
+                        Reverse engineer or to compile code from our Mobile Application;
+                    </li>
+                    <li>
+                        Send or receive any material which is technically harmful (including
+                        computer viruses, logic bombs, Trojan horses, worms, harmful components,
+                        corrupted data or other malicious software or harmful data);
+                    </li>
+                    <li>
+                        Do anything in such a way as to, or commit any act that would or does,
+                        impose an unreasonable or disproportionately large load on our
+                        infrastructure;
+                    </li>
+                    <li>
+                        Gain or attempt to gain unauthorized access to our servers;
+                    </li>
+                    <li>
+                        Extract data from or hack into the Mobile Application;
+                    </li>
+                    <li>
+                        Furnish false data including false names, addresses, contact details or any
+                        other information which is required for the operation of this Mobile
+                        Application;
+                    </li>
+                    <li>
+                        Attempt to circumvent our security or network including to access data not
+                        intended for you, log into a server or account you are not expressly
+                        authorised to access, or probe the security of other networks (such as
+                        running a port scan);
+                    </li>
+                    <li>
+                        Execute any form of network monitoring which will intercept any data or
+                        communications not intended for you;
+                    </li>
+                    <li>
+                        Sell, re-sell, rent or charge for our Mobile Application;
+                    </li>
+                    <li>
+                        To do anything for a purpose other than which we have designed the Mobile
+                        Application and Services for;
+                    </li>
+                    <li>
+                        Use the Services or Mobile Application in breach of these Terms and
+                        Conditions of Use;
+                    </li>
+                    <li>
+                        Engage in any unlawful activity in connection with the use of the Mobile
+                        Application or the Services; or
+                    </li>
+                    <li>
+                        Engage in any conduct which, in our exclusive reasonable opinion, restricts
+                        or inhibits any other customer from properly using or enjoying the Mobile
+                        Application or Services;
+                    </li>
+                    <li>
+                        Attempt, instigate, abet, assist or act in furtherance of a common or joint
+                        intention of the abovementioned.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                You agree to report any of the actions listed above under Clause 5.2 to us at <a
+                    href="mailto:support@clump.chat">support@clump.chat</a> or in the Mobile
+                Application if you know of or suspect such actions by any user, whether such action
+                is directed towards you or any other users, persons or entities.
+            </li>
+        </ol>
+    </li>
+    <li>
+        <div class="header">RULES ABOUT USE OF THE MOBILE APPLICATION</div>
+        <ol>
+            <li>
+                We will use reasonable endeavours to correct any errors or omissions as soon as
+                practicable after being notified of them. However, we do not guarantee that the
+                Mobile Application will be free of faults, and we do not accept liability for any
+                such faults, errors or omissions. In the event of any such error, fault or omission,
+                you should report it by contacting us at <a href="mailto:support@clump.chat">support@clump.chat.</a>
+            </li>
+            <li>
+                We do not warrant that your use of the Services or the Mobile Application will be
+                uninterrupted and we do not warrant that any information (or messages) transmitted
+                via the Services or the Mobile Application will be transmitted accurately, reliably,
+                in a timely manner or at all. Notwithstanding that we will try to allow
+                uninterrupted access to the Services and the Mobile Application, access to the
+                Services and the Mobile Application may be suspended, restricted or terminated at
+                any time.
+            </li>
+            <li>
+                We do not give any warranty that the Services and the Mobile Application are free
+                from viruses or anything else which may have a harmful effect on any technology.
+            </li>
+            <li>
+                We reserve the right to block any user from contacting any other user if you are
+                suspected of committing or attempting to commit any of the actions listed under
+                Clause 5.2. We also reserve the right to block you from using the Mobile
+                Application, and we are under no obligation to give any reasons whatsoever.
+            </li>
+            <li>
+                We reserve the right to change, modify, substitute, suspend or remove without notice
+                any information or Services on the Mobile Application from time to time. Your access
+                to the Mobile Application and/or the Services may also be occasionally restricted to
+                allow for repairs, maintenance or the introduction of new facilities or services. We
+                will attempt to restore such access as soon as we reasonably can. For the avoidance
+                of doubt, we reserve the right to withdraw any information or Services from the
+                Mobile Application at any time.
+            </li>
+            <li>
+                We reserve the right to block access to and/or to edit or remove any material which
+                in our reasonable opinion may give rise to a breach of these Terms and Conditions of
+                Use.
+            </li>
+        </ol>
+    </li>
+    <li>
+        <div class="header">SUSPENSION AND TERMINATION</div>
+        <ol>
+            <li>
+                If you use (or anyone other than you, with your permission uses) the Mobile
+                Application, any Services in contravention of these Terms and Conditions of Use, we
+                may suspend or terminate, temporarily or permanently, your use of the Services
+                and/or Mobile Application.
+            </li>
+            <li>
+                If we suspend or terminate the Services or Mobile Application from you, we may
+                refuse to restore the Services or Mobile Application for your use until we receive
+                an assurance from you, in a form we deem acceptable, that there will be no further
+                breach of the provisions of these Terms and Conditions of Use.
+            </li>
+            <li>
+                Cauldron & Ko Pte. Ltd. shall fully co-operate with any law enforcement authorities
+                or court order requesting or directing Cauldron & Ko Pte. Ltd. to disclose the
+                identity or locate anyone in breach of these Terms and Conditions of Use.
+            </li>
+            <li>
+                Without limitation to anything else in this Clause 7, we shall be entitled
+                immediately or at any time (in whole or in part) to:
+                <ol>
+                    <li>
+                        Suspend or terminate the Services and/or Mobile Application;
+                    </li>
+                    <li>
+                        Suspend or terminate your use of the Services and/or Mobile Application;
+                        and/or
+                    </li>
+                    <li>
+                        Suspend or terminate the use of the Services and/or Mobile Application for
+                        persons we believe to be connected (in whatever manner) to you, if:
+                    </li>
+                    <li>
+                        You commit or attempt to commit any breach of these Terms and Conditions of
+                        Use;
+                    </li>
+                    <li>
+                        We suspect, on reasonable grounds, that you have, might or will commit a
+                        breach of these Terms and Conditions of Use; or
+                    </li>
+                    <li>
+                        We suspect, on reasonable grounds, that you may have committed or be
+                        committing any fraud or crime against us or any person.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                Our rights under this Clause 7 shall not prejudice any other right or remedy we may
+                have in respect of any breach or any rights, obligations or liabilities accrued
+                prior to termination.
+            </li>
+        </ol>
+    </li>
+    <li>
+        <div class="header">DISCLAIMER AND EXCLUSION OF LIABILITY</div>
+        <ol>
+            <li>
+                The Mobile Application, the Services, the information on the Mobile Application and
+                use of all related facilities are provided on an "as is, as available" basis without
+                any warranties whether express or implied.
+            </li>
+            <li>
+                To the fullest extent permitted by applicable law, we disclaim all representations
+                and warranties relating to the Mobile Application and its contents, including in
+                relation to any inaccuracies or omissions in the Mobile Application, warranties of
+                merchantability, quality, fitness for a particular purpose, accuracy, availability,
+                non-infringement or implied warranties from course of dealing or usage of trade.
+            </li>
+            <li>
+                We do not warrant that the Mobile Application will always be accessible,
+                uninterrupted, timely, secure, error free or free from computer virus or other
+                invasive or damaging code or that the Mobile Application will not be affected by any
+                acts of God or other force majeure events, including inability to obtain or shortage
+                of necessary materials, equipment facilities, power or telecommunications, lack of
+                telecommunications equipment or facilities and failure of information technology or
+                telecommunications equipment or facilities.
+            </li>
+            <li>
+                While we may use reasonable efforts to include accurate and up-to-date information
+                on the Mobile Application, we make no warranties or representations as to its
+                accuracy, timeliness or completeness.
+            </li>
+            <li>
+                We shall not be liable for any acts or omissions of any third parties howsoever
+                caused, and for any direct, indirect, incidental, special, consequential or punitive
+                damages, howsoever caused, resulting from or in connection with the mobile
+                application and the services offered in the mobile application, your access to, use
+                of or inability to use the mobile application or the services offered in the mobile
+                application, reliance on or downloading from the mobile application and/or services,
+                or any delays, inaccuracies in the information or in its transmission including but
+                not limited to damages for loss of business or profits, use, data or other
+                intangible, even if we have been advised of the possibility of such damages.
+            </li>
+            <li>
+                We shall not be liable in contract, tort (including negligence or breach of
+                statutory duty or duties) or otherwise howsoever and whatever the cause thereof, for
+                any indirect, consequential, collateral, special or incidental loss or damage
+                suffered or incurred by you in connection with the Mobile Application and these
+                Terms and Conditions of Use. For the purposes of these Terms and Conditions of Use,
+                indirect or consequential loss or damage includes, without limitation, loss of
+                revenue, profits, anticipated savings or business, loss of data or goodwill, loss of
+                use or value of any equipment including software, claims of third parties, and all
+                associated and incidental costs and expenses.
+            </li>
+            <li>
+                The above exclusions and limitations apply only to the furthest extent permitted by
+                law. If any provision of this Terms of Use should be or be found to be invalid or
+                unenforceable, such invalidity or unenforceability shall not affect the remaining
+                provisions of this Terms of Use which shall remain in full force and effect and be
+                valid.
+            </li>
+            <li>
+                Notwithstanding our efforts to ensure that our system is secure, you acknowledge
+                that all electronic data transfers are potentially susceptible to interception by
+                others. We cannot, and do not, warrant that data transfers pursuant to the Mobile
+                Application, or electronic mail transmitted to and from us, will not be monitored or
+                read by others.
+            </li>
+        </ol>
+    </li>
+    <li>
+        <div class="header">INDEMNITY</div>
+        <ol>
+            <li>
+                You agree to indemnify and keep us indemnified against any claim, action, suit or
+                proceeding brought or threatened to be brought against us which is caused by or
+                arising out of (a) your use of the Services, (b) any other party’s use of the
+                Services using your user ID, verification PIN and/or any identifier number allocated
+                by Cauldron & Ko Pte. Ltd., and/or (c) your breach of any of these Terms and
+                Conditions of Use, and to pay us damages, costs and interest in connection with such
+                claim, action, suit or proceeding.
+            </li>
+        </ol>
+    </li>
+    <li>
+        <div class="header">INTELLECTUAL PROPERTY RIGHTS</div>
+        <ol>
+            <li>
+                All editorial content, information, photographs, illustrations, artwork and other
+                graphic materials, and names, logos and trade marks on the Mobile Application are
+                protected by copyright laws and/or other laws and/or international treaties, and
+                belong to us and/or our suppliers, as the case may be. These works, logos, graphics,
+                sounds or images may not be copied, reproduced, retransmitted, distributed,
+                disseminated, sold, published, broadcasted or circulated whether in whole or in
+                part, unless expressly permitted by us and/or our suppliers, as the case may be.
+            </li>
+            <li>
+                Nothing contained on the Mobile Application should be construed as granting by
+                implication, estoppel, or otherwise, any license or right to use any trademark
+                displayed on the Mobile Application without our written permission. Misuse of any
+                trademarks or any other content displayed on the Mobile Application is prohibited.
+            </li>
+            <li>
+                We will not hesitate to take legal action against any unauthorised usage of our
+                trade marks, name or symbols to preserve and protect our rights in the matter. All
+                rights not expressly granted herein are reserved and nothing herein construes a
+                waiver thereof.
+            </li>
+        </ol>
+    </li>
+    <li>
+        <div class="header">PRIVACY POLICY</div>
+        <ol>
+            <li>
+                We are committed to respecting and protecting your privacy. Access to the Mobile
+                Application and use of the Services offered on the Mobile Application by Cauldron &
+                Ko Pte. Ltd. is subject to this Privacy Policy. By accessing the Mobile Application
+                and by continuing to use the Services offered, you are deemed to have accepted this
+                Privacy Policy, and in particular, you are deemed to have consented to our use and
+                disclosure of your personal information in the manner prescribed in this Privacy
+                Policy and for the purposes set out in Clauses 3 and/or 4. We reserve the right to
+                amend this Privacy Policy from time to time. If you disagree with any part of this
+                Privacy Policy, you must immediately discontinue your access to the Mobile
+                Application and your use of the Services.
+            </li>
+            <li>
+                Collection, use and disclosure: As part of the normal operation of our Services, we
+                collect and use information about you. This includes but is not limited to:
+                <ol>
+                    <li>
+                        Chat or event logs in the Mobile Application;
+                    </li>
+                    <li>
+                        Information that you provide by using the Mobile Application and Services.
+                        This includes information provided at the time of Registration. We may also
+                        ask you for information at other times, for example, when you report a
+                        problem with our site;
+                    </li>
+                    <li>
+                        If you contact us, we may keep a record of that correspondence;
+                    </li>
+                    <li>
+                        Information about the device that you are accessing from which may include
+                        location and other identifying data to enable us to provide our Services.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                Retention of data: We only retain personal data for as long as you have registered
+                and have an account with us. Data may be archived as long as the purpose for which
+                the data was used still exists.
+            </li>
+            <li>
+                The purposes for which information may be used by us in and outside Singapore
+                include:
+                <ol>
+                    <li>
+                        Ensuring that content and use of the Mobile Application is presented in the
+                        most effective manner for you;
+                    </li>
+                    <li>
+                        Providing you with alerts, newsletter, or information that you requested or
+                        signed up to;
+                    </li>
+                    <li>
+                        Carrying out our obligations arising from any contracts entered into between
+                        you and us;
+                    </li>
+                    <li>
+                        Allowing you to participate in interactive features of our Services, when
+                        you choose to do so;
+                    </li>
+                    <li>
+                        Designing and conducting surveys/questionnaires for client
+                        profiling/segmentation, statistical analysis, improving and furthering the
+                        provision our products and services;
+                    </li>
+                    <li>
+                        Complying with laws and regulations applicable to us or any of our
+                        affiliates in or outside Singapore;
+                    </li>
+                    <li>
+                        Legal proceedings;
+                    </li>
+                    <li>
+                        Promoting and marketing services and products subject to your exercise of
+                        the opt-out right (please see further details in clause 11.14 below);
+                    </li>
+                    <li>
+                        Information required for the operation of the mobile application and/or
+                        services; or
+                    </li>
+                    <li>
+                        Purposes directly related or incidental to the above.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                We intend to use your data in direct marketing by us and we require your consent
+                (which includes an indication of no objection) for that purpose. In this connection,
+                please note that:
+                <ol>
+                    <li>
+                        Your name, contact details (including email address, contact number), usage
+                        pattern and behaviour of the Mobile Application, location data, held by us
+                        from time to time may be used by us in direct marketing;
+                    </li>
+                    <li>
+                        We may conduct direct marketing via emails, SMS, Mobile Application
+                        notifications, telephone and other means of communication with you. You may
+                        choose not to receive promotional materials, by simply informing us. We will
+                        cease to do so subsequently without charge.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                Disclosure of your information: We will keep the personal data we hold confidential
+                but may provide information to the following, for the provision and/or improvement
+                of the Mobile Application and/or Services:
+                <ol>
+                    <li>
+                        Our offices, affiliates, business partners and counterparts (if any),
+                        whether within Singapore or overseas;
+                    </li>
+                    <li>
+                        Persons, companies, or organizations under a duty of confidentiality to us;
+                        and
+                    </li>
+                    <li>
+                        Persons, companies, organizations, courts or governments to whom we are
+                        required to make disclosure under applicable laws and regulations in or
+                        outside Singapore.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                We will protect personal information by reasonable security safeguards against loss
+                or theft, as well as unauthorized access, disclosure, copying, use or modification.
+            </li>
+            <li>
+                Cookies: Our Mobile Application uses cookies to distinguish you from other users of
+                our website. This helps us to provide you with a good experience when you use our
+                Mobile Application and also allows us to improve our Mobile Application. By
+                continuing to use our Mobile Application and Services, you are agreeing to our use
+                of cookies.
+                <ol>
+                    <li>
+                        We use the following cookies:
+                        <ol>
+                            <li>
+                                Strictly necessary cookies. These are cookies that are required for
+                                the operation of our Mobile Application. They include, for example,
+                                cookies that enable you to view the location of the event and your
+                                current location.
+                            </li>
+                            <li>
+                                Analytical/performance cookies. They allow us to recognise and count
+                                the number of users of the Mobile Application and to see how users
+                                use our Mobile Application when they are using it. This helps us to
+                                improve the way our Mobile Application works, for example, by
+                                ensuring that users are finding what they are looking for easily.
+                            </li>
+                            <li>
+                                Functionality cookies. These are used to recognise you when you use
+                                our Mobile Application. This enables us to personalise our content
+                                for you, greet you by name and remember your preferences (for
+                                example, your choice of language or region).
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Please note that third parties (including, for example, advertising networks
+                        and providers of external services like web traffic analysis services) may
+                        also use cookies, over which we have no control. These cookies are likely to
+                        be analytical/performance cookies or targeting cookies.
+                    </li>
+                    <li>
+                        You can block cookies through your mobile phone or device that allows you to
+                        refuse the setting of all or some cookies. However, if you do so, you may
+                        not be able to access all or parts of our Mobile Application.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                Security and data transfers: All information you provide in using the Mobile
+                Application and/or Services is stored on secure servers located within or outside
+                Singapore. These servers may or may not be hosted by us. By usage of the Mobile
+                Application and/or Service, you agree to this.
+                <ol>
+                    <li>
+                        Unfortunately, the transmission of information via the internet is not
+                        completely secure. Although we will do our best to protect your personal
+                        data, we cannot guarantee the security of your data transmitted by using our
+                        Mobile Application and/or Services; any transmission is at your own risk and
+                        you agree not to hold us responsible for any breach of security while
+                        accessing the internet that is out of our control. Once we have received
+                        your information, we will use strict procedures and security features to try
+                        to prevent unauthorised access.
+                    </li>
+                    <li>
+                        We may also transfer your data to any of the persons or entities listed at
+                        Clause 11.6 above.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                Third party websites: Our Mobile Application may contain links to other sites (the
+                "Linked Sites"). We are not responsible for the privacy policies or practices of
+                such other Linked Sites. We encourage our users to be aware when leaving our Mobile
+                Application to read the privacy policies or statements of each Linked Site that
+                collects your personal data. You agree to waive any claim against us with respect to
+                the Linked Sites.
+            </li>
+            <li>
+                Changes to our privacy policy: Any changes we may make to our Privacy Policy in the
+                future will be posted on this page. Your continued use of our services constitutes
+                your agreement to this Privacy Policy and any updates.
+            </li>
+            <li>
+                Your consent and rights: By using our service, making an application or visiting our
+                website, you consent to the collection and use of your information and other
+                activities as outlined in this policy.
+            </li>
+            <li>
+                Under the Personal Data Protection Act (the "PDPA"), individuals have the right,
+                subject to the PDPA:
+                <ol>
+                    <li>
+                        To check whether we hold personal data about you and to access such data;
+                    </li>
+                    <li>
+                        To require us to correct as soon as reasonably practicable any data relating
+                        to you that is inaccurate;
+                    </li>
+                    <li>
+                        To ascertain our policies and practices in relation to personal data and the
+                        kind of personal data held by us; and
+                    </li>
+                    <li>
+                        To object to the use of your personal data for marketing purposes and we
+                        shall not use your personal data for marketing purposes after you
+                        communicate your objection to us.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                You may exercise your opt-out right by notifying us if you wish to object to the use
+                of your personal data for direct marketing purposes. Please send requests for such
+                objections, access to data, correction of data, information regarding policies and
+                practices and kinds of data held, questions or complaints to <a
+                    href="mailto:support@clump.chat">support@clump.chat</a>. In accordance with the
+                terms of the PDPA, we have the right to and may charge a minimum fee for processing
+                any data access request.
+            </li>
+        </ol>
+    </li>
+    <li>
+        <div class="header">AMENDMENTS</div>
+        <ol>
+            <li>
+                We may periodically make changes to the contents of the Mobile Application,
+                including to the descriptions and prices of goods and services advertised, at any
+                time and without notice. We assume no liability or responsibility for any errors or
+                omissions in the content of the Mobile Application.
+            </li>
+            <li>
+                We reserve the right to amend these Terms and Conditions of Use from time to time
+                without notice. The revised Terms and Conditions of Use will be posted on the Mobile
+                Application and shall take effect from the date of such posting. You are advised to
+                review these terms and conditions periodically as they are binding upon you.
+            </li>
+        </ol>
+    </li>
+    <li>
+        <div class="header">APPLICABLE LAW AND JURISDICTION</div>
+        <ol>
+            <li>
+                The Mobile Application can be accessed from all countries around the world where the
+                local technology permits. As each of these places have differing laws, by accessing
+                the Mobile Application both you and we agree that the laws of the Republic of
+                Singapore, including conflicts of laws principles thereof, will apply to all matters
+                relating to the use of the Mobile Application.
+            </li>
+            <li>
+                You accept and agree that both you and we shall submit to the exclusive jurisdiction
+                of the courts of the Republic of Singapore in respect of any dispute arising out of
+                and/or in connection with these Terms and Conditions of Use.
+            </li>
+        </ol>
+    </li>
+</ol>
+</body>
+</html>

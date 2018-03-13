@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:clickable="true"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:ignore="MergeRootFrame">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:theme="@style/PrimaryActivity.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/item_margin">
+
+                <ImageView
+                    android:id="@+id/imvLeft"
+                    style="@style/ImageButtonIcon"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/toolbar_back_black" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/avatarImage"
+                    android:layout_toRightOf="@+id/imvLeft">
+
+                    <TextView
+                        android:id="@+id/tvHeader"
+                        style="@style/TextViewTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:text="@string/app_name"
+                        android:textColor="@color/textColorNormalSecondary" />
+
+                    <TextView
+                        android:id="@+id/tvDescription"
+                        style="@style/TextViewNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tvHeader"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/app_name"
+                        android:textColor="@color/textColorNormalSecondary"
+                        android:textStyle="italic" />
+                </RelativeLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avatarImage"
+                    android:layout_width="@dimen/size_item_icon"
+                    android:layout_height="@dimen/size_item_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/item_margin"
+                    android:layout_toLeftOf="@+id/imvEvent"
+                    android:src="@drawable/default_profile_user" />
+
+                <ImageView
+                    android:id="@+id/imvEvent"
+                    style="@style/ImageButtonIcon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/toolbar_events" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/contentEventInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/textColorNormalSecondary"
+                android:paddingBottom="@dimen/item_margin_small"
+                android:paddingLeft="@dimen/item_margin"
+                android:paddingRight="@dimen/item_margin"
+                android:paddingTop="@dimen/item_margin_small"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imvEventHeader"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/item_margin"
+                    android:src="@drawable/events_white" />
+
+                <TextView
+                    android:id="@+id/tvEvent"
+                    style="@style/TextViewNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imvEventHeader"
+                    android:text="N/A"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/tvEventDate"
+                    style="@style/TextViewNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvEvent"
+                    android:layout_toRightOf="@+id/imvEventHeader"
+                    android:text="N/A"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_micro" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llChatList"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#bbdad4"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progressLazyLoad"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="2dp"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvChats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    app:reverseLayout="true"
+                    app:stackFromEnd="true" />
+            </LinearLayout>
+
+            <!--Send toolbar-->
+
+            <LinearLayout
+                android:id="@+id/contentToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundGray"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imvFile"
+                    style="@style/ImageButtonIcon"
+                    android:src="@drawable/keyboard_upload" />
+
+                <ImageView
+                    android:id="@+id/imvSticker"
+                    style="@style/ImageButtonIcon"
+                    android:src="@drawable/keyboard_stickers" />
+
+                <EditText
+                    android:id="@+id/edtInputChat"
+                    style="@style/EditTextNormal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/item_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_text_status"
+                    android:hint="@string/type_your_message"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:maxLines="5" />
+
+                <ImageView
+                    android:id="@+id/imvTail"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="-3px"
+                    android:layout_marginRight="@dimen/item_margin"
+                    android:layout_marginTop="@dimen/item_margin"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/chat_bubble_tail_white_right" />
+
+                <Button
+                    android:id="@+id/btnSend"
+                    style="@style/ButtonChat"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/send" />
+            </LinearLayout>
+
+            <!--Sticker-->
+            <LinearLayout
+                android:id="@+id/contentSticker"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/colorBackgroundStickers"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvStickers"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvEmojis"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBackgroundGray"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imvCustomSticker"
+                        style="@style/ImageButtonIcon"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/clump_sticker_1" />
+
+                    <ImageView
+                        android:id="@+id/imvDefaultSticker"
+                        style="@style/ImageButtonIcon"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/keyboard_stickers" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--File-->
+            <LinearLayout
+                android:id="@+id/contentFile"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvFiles"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <com.ck.clump.ui.widget.ProgressWheel
+                    android:id="@+id/progressLoading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    app:matProg_barColor="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBackgroundGray"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imvGallery"
+                        style="@style/ImageButtonIcon"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_picture" />
+
+                    <ImageView
+                        android:id="@+id/imvCamera"
+                        style="@style/ImageButtonIcon"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_camera" />
+
+                    <ImageView
+                        android:id="@+id/imvVideo"
+                        style="@style/ImageButtonIcon"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_player"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.ck.clump.ui.widget.ProgressWheel
+            android:id="@+id/progressLoadingHistory"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:matProg_barColor="@color/colorPrimaryDark" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtNewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_btn_primary"
+        android:padding="5dp"
+        android:visibility="invisible"
+        android:text="@string/you_have_new_message"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_small" />
+
+    <LinearLayout
+        android:id="@+id/llNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout"
+        android:visibility="gone">
+
+        <include layout="@layout/notification_layout" />
+    </LinearLayout>
+
+
+</RelativeLayout>

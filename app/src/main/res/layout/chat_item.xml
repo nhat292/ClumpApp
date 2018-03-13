@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/item_margin">
+
+    <LinearLayout
+        android:id="@+id/llLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatarLeft"
+            android:layout_width="@dimen/size_avatar_chat"
+            android:layout_height="@dimen/size_avatar_chat"
+            android:layout_marginRight="@dimen/item_margin_small"
+            android:src="@drawable/default_profile_user"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNameLeft"
+                style="@style/TextViewNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/item_margin_small"
+                android:text="N/A"
+                android:textColor="@color/textColorNormalSecondary"
+                android:textSize="@dimen/text_size_micro"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/llTextContentLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/chat_bubble_tail_left" />
+
+                <TextView
+                    android:id="@+id/tvContentLeft"
+                    style="@style/TextViewNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_text_status_left"
+                    android:gravity="center_vertical"
+                    android:maxWidth="@dimen/chat_image_width_size"
+                    android:minHeight="40dp"
+                    android:padding="@dimen/item_margin"
+                    android:text="Chat content" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgStickerLeft"
+                android:layout_width="@dimen/chat_sticker_size"
+                android:layout_height="@dimen/chat_sticker_size"
+                android:scaleType="fitCenter"
+                android:src="@drawable/clump_sticker_1" />
+
+            <ImageView
+                android:id="@+id/imgFileLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxHeight="@dimen/chat_image_height_size"
+                android:maxWidth="@dimen/chat_image_width_size"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_image_default" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvStatusLeft"
+                style="@style/TextViewNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/read"
+                android:textColor="@color/textColorNormalSecondary"
+                android:textSize="@dimen/text_size_micro"
+                android:visibility="gone"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTimeLeft"
+                style="@style/TextViewNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/textColorNormalSecondary"
+                android:textSize="@dimen/text_size_micro" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvStatusRight"
+                style="@style/TextViewNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/read"
+                android:textColor="@color/textColorNormalSecondary"
+                android:textSize="@dimen/text_size_micro"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvTimeRight"
+                style="@style/TextViewNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/textColorNormalSecondary"
+                android:textSize="@dimen/text_size_micro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNameRight"
+                style="@style/TextViewNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/item_margin_small"
+                android:text="N/A"
+                android:textColor="@color/textColorNormalSecondary"
+                android:textSize="@dimen/text_size_micro"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/llTextContentRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvContentRight"
+                    style="@style/TextViewNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_text_status_right"
+                    android:gravity="center_vertical"
+                    android:maxWidth="@dimen/chat_image_width_size"
+                    android:minHeight="40dp"
+                    android:padding="@dimen/item_margin"
+                    android:text="Chat content" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/chat_bubble_tail_right" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgStickerRight"
+                android:layout_width="@dimen/chat_sticker_size"
+                android:layout_height="@dimen/chat_sticker_size"
+                android:scaleType="fitCenter"
+                android:src="@drawable/clump_sticker_1" />
+
+            <ImageView
+                android:id="@+id/imgFileRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxHeight="@dimen/chat_image_height_size"
+                android:maxWidth="@dimen/chat_image_width_size"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_image_default" />
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatarRight"
+            android:layout_width="@dimen/size_avatar_chat"
+            android:layout_height="@dimen/size_avatar_chat"
+            android:layout_marginRight="@dimen/item_margin_small"
+            android:src="@drawable/default_profile_user"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/item_margin"
+        android:background="@drawable/bg_today"
+        android:padding="@dimen/item_margin"
+        android:text="@string/today"
+        android:textSize="@dimen/text_size_medium"
+        android:visibility="gone" />
+
+</LinearLayout>

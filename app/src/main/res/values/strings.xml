@@ -1,0 +1,225 @@
+<resources>
+
+    <!--Keys (Production)-->
+    <string name="pubnub_public_key">pub-c-fdc2e199-1c9a-4142-b7f4-a699de965021</string>
+    <string name="pubnub_subscribe_key">sub-c-f5486e1c-36e0-11e7-b611-0619f8945a4f</string>
+    <!--Dev key (Nhat's)-->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyB38-Tiyxt-Zx6AZ9RjzYpfSbKLnkQk7a8</string>
+    <!--Dev key (Anthony's)-->
+    <string name="gcm_sender_id">774452282186</string>
+    <!--END: Keys-->
+
+    <!--Common-->
+    <string name="app_name">Clump</string>
+    <string name="loading">Loading...</string>
+    <string name="error_title">Oops</string>
+    <string name="info_title">Information</string>
+    <string name="error_message">Something went wrong!</string>
+    <string name="confirm">Confirm</string>
+    <string name="close_app">Are you sure to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="done">Done</string>
+    <string name="menu">Menu</string>
+    <string name="save">Save</string>
+    <string name="create">Create</string>
+    <string name="search">Search</string>
+    <string name="location">Location</string>
+    <string name="message_no_internet_connection">No Internet Connection!</string>
+    <string name="message_default_error">Something went wrong! Please try again.</string>
+    <string name="loading_media">Loading media...</string>
+    <string name="loading_media_error">Couldn\'t load media</string>
+    <string name="take_a_photo">Take a photo</string>
+    <string name="choose_from_gallery">Choose from gallery</string>
+    <string name="message_success">Success!</string>
+    <string name="view_picture">View picture</string>
+
+    <!--Sweet Alert-->
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <!--Permission-->
+    <string name="all_permissions_denied_feedback">All those permissions are needed for doing some magic</string>
+    <string name="camera_permission_denied_feedback">Clump needs access to your camera to capture photos and send them via the app.</string>
+    <string name="contacts_permission_denied_feedback">Clump reads your contact list locally to identify your friends, who are using Clump app. You can invite your Clump friends to your events or invite others to use the app. We don\'t save your contact list on our servers and  don\'t use your contacts for any other purpose.</string>
+    <string name="storage_permission_denied_feedback">Clump needs access external storage to save user image. Please allow it!</string>
+    <string name="audio_permission_denied_dialog_feedback">Audio recording will not be available until you accept the permission request</string>
+    <string name="call_phone_permission_denied_dialog_feedback">Call phone permission is needed to open phone dialer</string>
+    <string name="permission_rationale_message_multi_permission">Clump need these permissions to do somethings. Please allow it!</string>
+    <string name="permission_rationale_settings_button_text">SETTINGS</string>
+    <string name="permission_write_calendar">Clump accesses your calendar to write Clump events to your device.</string>
+    <string name="permission_location">Clumps need access to your location to make it easier to create events.</string>
+    <string name="sms_permission_denied_feedback">Clump needs access to your sms to read verify code and auto fill in the form on next step. Please allow it!</string>
+
+    <!--Activity Sign Up One-->
+    <string name="asuo_header_title">Sign up by confirming your country code and phone number.</string>
+    <string name="asuo_hint_phone">Your phone number</string>
+    <string name="asuo_title_country">Country</string>
+    <string name="message_please_input_phone_number">Please input your phone number!</string>
+
+    <!--Activity Sign Up Two-->
+    <string name="asut_sms_come">An SMS with your Clump activation code has been sent to your phone number.</string>
+    <string name="asut_to_verify_phone">To verify your phone number, please enter the 4-digit activation code.</string>
+    <string name="message_please_enter_4_digits">Please input 4 digits of verify code!</string>
+    <string name="message_code_is_not_correct">Code is not correct. Please try again!</string>
+
+    <!--Sign Up Profile-->
+    <string name="message_profile_updated">Profile updated!</string>
+
+    <!--Contacts-->
+    <string name="contacts">Contacts</string>
+    <string name="groups">Groups</string>
+    <string name="friends">Friends</string>
+
+    <!--Chats-->
+    <string name="chats">Chats</string>
+    <string name="has_sent_a_message">Has sent a message</string>
+    <string name="has_sent_a_image">Has sent a image</string>
+    <string name="has_sent_a_sticker">Has sent a sticker</string>
+    <string name="delete_chat_with_format">"Delete chat with %s?</string>
+    <string name="delete_chat_group_format">Delete chat group %s?</string>
+    <string name="message_copied">Message copied</string>
+    <string name="delete">Delete</string>
+    <string name="copy">Copy</string>
+    <string name="image">Image</string>
+    <string name="sticker">Sticker</string>
+
+    <!--Events-->
+    <string name="events">Events</string>
+    <string name="i_am_in">I\'m in</string>
+    <string name="i_am_out">I\'m out</string>
+    <string name="hint_event_name">Give a name to your Event</string>
+    <string name="set_a_date">Set a Date</string>
+    <string name="set_a_time">Set Time</string>
+    <string name="option_details">Option Details</string>
+    <string name="provide_additional_info">Provide additional information</string>
+    <string name="pin_location">Pin location</string>
+    <string name="edit_info">Edit Information</string>
+    <string name="completed_events">Completed Events</string>
+    <string name="message_attending_event">You\'re attending. Have fun!</string>
+    <string name="message_delete_event_confirm">Are you sure to delete this event?</string>
+    <string name="count_me_in">Count Me In</string>
+    <string name="count_me_out">Count Me Out</string>
+    <string name="details">Details</string>
+    <string name="no_description">No Description</string>
+    <string name="my_location">My Location</string>
+    <string name="no_location">No Location</string>
+    <string name="current_position">Current position</string>
+    <string name="message_update_success">Update successful!</string>
+    <string name="my_custom_location">My custom location</string>
+
+    <!--Settings-->
+    <string name="settings">Settings</string>
+    <string name="account">Account</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="general">General</string>
+    <string name="notifications">Notifications</string>
+    <string name="chat_setting">Chat Settings</string>
+    <string name="blocking">Blocking</string>
+    <string name="more">More</string>
+    <string name="about">About</string>
+    <string name="term_conditions">Terms &amp; Conditions</string>
+    <string name="logout">Logout</string>
+    <string name="logout_confirm">Are you sure you want to logout?</string>
+
+    <!--Settings Notification-->
+    <string name="sound">Sound</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="mute">Mute</string>
+
+    <!--Setting Chat-->
+    <string name="show_full_message">Show full message</string>
+    <string name="show_secret_message">Show secret message</string>
+
+    <!--Setting Profile-->
+    <string name="profile">Profile</string>
+    <string name="display_name">Display Name</string>
+    <string name="status">Status</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_on_clump">I\'m on Clump!</string>
+    <string name="set_background">Set a profile background</string>
+    <string name="explain_background">Set a profile picture and display name. You can also personalize your profile with a status message and background image.</string>
+    <string name="message_profile_update_success">Profile update successful!</string>
+    <string name="message_profile_background_update_success">Background update successful!</string>
+    <string name="message_please_input_display_name">Please input Display Name!</string>
+
+    <!--Create Group-->
+    <string name="select_file">Select File</string>
+    <string name="preview">Preview</string>
+    <string name="menu_delete_group">Delete group</string>
+    <string name="menu_incoming_event">Incoming event</string>
+
+    <!--Friend Info-->
+    <string name="menu_report_user">Report</string>
+    <string name="menu_block_user">Block this user</string>
+    <string name="menu_report_1">Report something share by this user</string>
+    <string name="menu_report_2">Report this user profile image</string>
+    <string name="message_report_user_success">Report user successful!</string>
+    <string name="message_block_user_success">Block user successful!</string>
+
+    <!--Invite friends-->
+    <string name="invite_friends">Invite Friends</string>
+    <string name="button_invite">Please invite friends to Clump</string>
+    <string name="button_invite_one">Invite 1 friend to Clump</string>
+    <string name="button_invite_many">Invite %s friends to Clump</string>
+    <string name="choose_at_lease_friend">Please choose at least on friend!</string>
+    <string name="choose_friends_or_group">Please choose friends or group</string>
+
+    <!--Pick Friend-->
+    <string name="pick_friends">Pick Friends</string>
+    <string name="audit">Activity</string>
+
+    <!--Group Info-->
+    <string name="members">Members</string>
+    <string name="medias" formatted="false">Media (%d)</string>
+    <string name="add">Add</string>
+    <string name="number_of_number" formatted="false">%s of %s</string>
+    <string name="friend_status">Where the Party at ya\'ll?</string>
+    <string name="members_added_one" formatted="false">Added 1 member to %s</string>
+    <string name="members_added_one_more" formatted="false">Added %d members to %s</string>
+    <string name="group_name">Group Name</string>
+    <string name="message_type_a_group_name">Please enter a group name!</string>
+
+    <!--Chat-->
+    <string name="sent">Sent</string>
+    <string name="send">Send</string>
+    <string name="read">Read</string>
+    <string name="moments">Moments</string>
+    <string name="type_your_message">Type your message</string>
+    <string name="message_chat_removed">This message has been removed.</string>
+    <string name="you_have_new_message">You have a new message</string>
+
+    <!--Audit-->
+    <string name="no_activities">No Activities</string>
+
+    <!--Event setup-->
+    <string name="please_enter_event_title">Please input title for event!</string>
+    <string name="message_event_past_day">Can’t create an event on a past day!</string>
+
+    <!--Event setup-->
+    <string name="event_detail">Event Details</string>
+    <string name="hint_edit_information">Give a title more information on the event.</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+
+    <!--Pin location-->
+    <string name="no_results_found">No results found.</string>
+    <string name="hint_search_location">Search location</string>
+
+    <!--Create Group-->
+    <string name="create_group">Create a Group</string>
+    <string name="plan_an_event">Plan an Event</string>
+
+    <!--Blocking Activity-->
+    <string name="text_blocked_users">Blocked users</string>
+
+    <!--Create Group-->
+    <string name="please_type_a_group_name">Please type a group name!</string>
+
+    <!--Invite friends-->
+    <string name="message_invite_success">Invite your friend success!</string>
+
+</resources>

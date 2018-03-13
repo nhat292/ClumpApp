@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:padding="@dimen/item_margin">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_image_media"
+        android:orientation="vertical"
+        app:layout_aspectRatio="100%"
+        app:layout_widthPercent="100%">
+
+        <com.ck.clump.ui.widget.RoundRectCornerImageView
+            android:id="@+id/avatarImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_profile_user" />
+    </LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>

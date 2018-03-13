@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:ignore="MergeRootFrame">
+
+    <ScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Header-->
+            <RelativeLayout
+                android:id="@+id/asutHeaderContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/fab_margin">
+
+                <TextView
+                    android:id="@+id/asutTv1"
+                    style="@style/TextViewTitleWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:gravity="center"
+                    android:text="@string/asut_sms_come" />
+
+
+                <TextView
+                    android:id="@+id/asutTv2"
+                    style="@style/TextViewTitleWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/asutTv1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:gravity="center"
+                    android:text="@string/asut_to_verify_phone" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/asutContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/asutHeaderContent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin_large"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/asutCode1"
+                    style="@style/EditTextHeader"
+                    android:layout_width="@dimen/width_input_code"
+                    android:layout_height="@dimen/height_input_code"
+                    android:layout_marginRight="@dimen/item_margin"
+                    android:background="@drawable/bg_text_verification_digit_blank"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text=""
+                    android:textSize="@dimen/size_input_code" />
+
+                <EditText
+                    android:id="@+id/asutCode2"
+                    style="@style/EditTextHeader"
+                    android:layout_width="@dimen/width_input_code"
+                    android:layout_height="@dimen/height_input_code"
+                    android:layout_marginRight="@dimen/item_margin"
+                    android:background="@drawable/bg_text_verification_digit_blank"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text=""
+                    android:textSize="@dimen/size_input_code" />
+
+                <EditText
+                    android:id="@+id/asutCode3"
+                    style="@style/EditTextHeader"
+                    android:layout_width="@dimen/width_input_code"
+                    android:layout_height="@dimen/height_input_code"
+                    android:layout_marginRight="@dimen/item_margin"
+                    android:background="@drawable/bg_text_verification_digit_blank"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text=""
+                    android:textSize="@dimen/size_input_code" />
+
+                <EditText
+                    android:id="@+id/asutCode4"
+                    style="@style/EditTextHeader"
+                    android:layout_width="@dimen/width_input_code"
+                    android:layout_height="@dimen/height_input_code"
+                    android:background="@drawable/bg_text_verification_digit_blank"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text=""
+                    android:textSize="@dimen/size_input_code" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/asutCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/asutContent"
+                android:layout_alignLeft="@+id/asutContent"
+                android:layout_alignRight="@+id/asutContent"
+                android:layout_alignTop="@+id/asutContent"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="4"
+                android:imeOptions="actionDone"
+                android:textColor="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/asuoBtnDone"
+                style="@style/ButtonSecondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/asutCode"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin_large"
+                android:enabled="false"
+                android:text="@string/done" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
